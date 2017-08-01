@@ -1,0 +1,33 @@
+<md-toolbar class="app-menu" role="toolbar">
+      <button class="sidenav-button" md-button (click)="sidenav.toggle()">
+        <md-icon>menu</md-icon>
+      </button>
+</md-toolbar>
+
+<md-sidenav-container class="sidenav-container">
+  <md-sidenav #sidenav class="sidenav-content" mode="side">
+        <div>
+          <button md-button class="sidenav-item level-1" [routerLink]="['/home']" title="Menupunk1">Menuepunkt1<md-icon class="sidenav-item-icon">account_box</md-icon></button>
+        </div>
+        <div>
+          <button md-button class="sidenav-item level-1" [routerLink]="['/app1']" title="Menupunk2">Menuepunkt2<md-icon class="sidenav-item-icon">extension</md-icon></button>
+        </div>
+        <div>
+          <button md-button class="sidenav-item level-1" [routerLink]="['/app2']" title="Menupunk3">Menuepunkt3<md-icon class="sidenav-item-icon">cloud</md-icon></button>
+        </div>
+        <div>
+          <button md-button class="sidenav-item level-1" [routerLink]="['/app3']" title="Menupunk4">Menuepunkt4<md-icon class="sidenav-item-icon">create</md-icon></button>
+        </div>
+        <div>
+          <button md-button class="sidenav-item level-1" [routerLink]="['/app4']" title="Menupunk5">Menuepunkt5<md-icon class="sidenav-item-icon">folder_shared</md-icon></button>
+        </div>
+        <div>
+          <button md-button class="sidenav-item level-1" [routerLink]="['/app5']" title="Menupunk6">Menuepunkt6<md-icon class="sidenav-item-icon">share</md-icon></button>
+        </div>
+
+
+  </md-sidenav>
+
+       <router-outlet></router-outlet>
+
+</md-sidenav-container>

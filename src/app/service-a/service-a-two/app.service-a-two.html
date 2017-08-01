@@ -1,0 +1,17 @@
+<div class="card card-1">
+<div class="text" ><b>Name:</b> {{appName}}</div>
+<div class="text" ><b>Version:</b> {{appVersion}}</div>
+<div class="text" ><b>Status:</b> {{appStatus}}</div>
+<div class="text" ><b>Uptime:</b> {{appUptime}}</div>
+
+
+
+    <div >
+      <canvas baseChart
+                  [data]="doughnutChartData"
+                  [labels]="doughnutChartLabels"
+                  [chartType]="doughnutChartType"
+                  (chartHover)="chartHovered($event)"
+                  (chartClick)="chartClicked($event)"></canvas>
+    </div>
+</div>

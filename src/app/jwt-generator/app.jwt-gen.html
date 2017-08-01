@@ -1,0 +1,17 @@
+
+<div class="card card-1">
+
+    <p> Subject: <input #subject mdInput placeholder="subject"></p>
+    <p> Expiration: <input #expiration mdInput placeholder="expiration"></p>
+    <p> Name: <input #name mdInput placeholder="name"></p>
+    <p> Scope: <input #scope mdInput placeholder="scope" ></p>
+    <p> Signature: <input #signature mdInput placeholder="Signature"></p>
+
+
+    <button md-button class="generate-button" title="Gen JWT" (click)="getToken(subject.value, expiration.value, name.value, scope.value, signature.value)">Generate JSON Web Token<md-icon >cloud</md-icon></button>
+
+    <div> Generated Token: </div>
+    <md-card class="jwt-card">{{jsonWebToken}}</md-card>
+
+</div>
+
